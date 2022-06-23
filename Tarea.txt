@@ -1,15 +1,5 @@
-  1- Pedir un nombre al usuario, no se dejara de pedir
-             el nombre hasta que el nombre sea igual a "Oliver"
-            // entonces terminara el ciclo y se mostrara que 
-            // el nombre es correcto (do while)
+1- Leer un numero N del usuario, el programa debera determinar si este numero es primo o no
 
-   2- Crear un Menu, con 3 opciones, las opciones seran:
-      1- Sumar
-      2- Restar
-      3- Salir
+2- Debera leer un numero N ingresado por el usuario, y debera mostrar los numeros del 1 a N
 
-      Si el usuario selecciona (1 o 2) la aplicacion
-      debera pedir 2 numeros y realizar la operacion, por
-      ultimo debera mostrar el resultado en pantalla , al
-      finalizar esta opcion debera volvver al menu principal
-      (while, if)           
+3- Crear un programa que lea un numero N y determine cuantos numeros "pares" hay desde 1 a N
