@@ -1,5 +1,5 @@
-1- Leer un numero N del usuario, el programa debera determinar si este numero es primo o no
+1- Leer un numero N del usuario, imprimir la tabla de multiplicacion correspondiente a este numero N
 
-2- Debera leer un numero N ingresado por el usuario, y debera mostrar los numeros del 1 a N
+2-  Leer un numero N del usuario, imprimir la tabla de division correspondiente a este numero N
 
-3- Crear un programa que lea un numero N y determine cuantos numeros "pares" hay desde 1 a N
+3-  Leer un numero N del usuario, imprimir las tablas de multiplicacion desde 1 hasta N
