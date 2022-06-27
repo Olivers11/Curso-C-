@@ -1,5 +1,0 @@
-1- Leer un numero N del usuario, imprimir la tabla de multiplicacion correspondiente a este numero N
-
-2-  Leer un numero N del usuario, imprimir la tabla de division correspondiente a este numero N
-
-3-  Leer un numero N del usuario, imprimir las tablas de multiplicacion desde 1 hasta N
