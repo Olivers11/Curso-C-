@@ -1,7 +1,10 @@
-1- Leer una palabra ingresada por el usuario e imprimir la palabra invertida. P = "mano", R = "onam"
-
-2- ![image](https://user-images.githubusercontent.com/55993708/176042446-25c41288-d6b6-4dcc-b51b-d956bc20434a.png)
-
+1- Leer un numero ingresado por el usuario y crear un arreglo de ese tamanio, luego tendra que llenar el arreglo con numeros random (investigar numeros random C#)
+   **[ciclos, arreglos, Random library]**
 
 
-3- Leer una cadena y contar cuantos espacios en blanco tiene, imprimir en pantalla, P = "Hola Oliver", R = 1
+2- Crear un arreglo de 6 posiciones, debera luego leer 6 numeros ingresados por el usuario y almacenarlos en el arreglo, por ultimo debera imprimir los numeros         
+   almacenados en el arreglo **[ciclos, arreglos]**
+   
+
+3- Crear un arreglo con 10 numeros <predefinidos>, recorrer el arreglo, calcular la suma y el promedio de estos numeros para finalmente imprimir estos datos al finalizar
+   **[ciclos, arreglos, aritmetica]**
