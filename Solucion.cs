@@ -11,43 +11,77 @@ namespace PrimeraAplicacion
     
         static void Main(string[] args)
         {
+            
+            int[] arr = { 4, 2, 19, 12, 5, 15 };
 
-            /*
-            -- Ejercicio 1 --
-            int N = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Tabla del " + N);
-            for(int i = 1; i <= 10; i++)
+            for(int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine(i + "x" + N + ": " + i*N);
+                Console.Write(arr[i] + " ");
             }
-            */
-            /*
-            -- Ejercicio 2 --
-            int N = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Tabla del " + N);
-            for (float i = 1; i <= 10; i++)
-            {
-                Console.WriteLine(i + "/" + N + ": " + i / N);
-            }*/
 
-            /*
-             * -- Ejercicio 3 --
-            int N = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Tabla del " + N);
-            for(int k = 1; k <= N; k++)
+            Console.WriteLine();
+
+            for(int j = 0; j < arr.Length; j++)
             {
-                for (int i = 1; i <= 10; i++)
+                for (int i = 0; i < arr.Length; i++)
                 {
-                    Console.WriteLine(i + "x" + k + ": " + i * k);
+                    if (i != arr.Length - 1)
+                    {
+                        if (arr[i] > arr[i + 1])
+                        {
+                            int valor_actual = arr[i];
+                            arr[i] = arr[i + 1];
+                            arr[i + 1] = valor_actual;
+                        }
+                    }
                 }
-                Console.WriteLine("----------------------------------");
             }
-            */
 
 
 
 
 
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
+            Console.ReadKey();
+
+
+
+
+            // Ejercicio #2
+            int[] arr = new int[5];
+
+            for(int i = 0; i < arr.Length; i++)
+            {
+                Console.Write("Ingrese un numero: ");
+                int n = Convert.ToInt32(Console.ReadLine());
+                arr[i] = n;
+            }
+
+
+            
+            for(int i = 0; i < arr.Length; i++)
+            {
+                for(int k = 0; k < arr.Length; k++)
+                {
+                    if (i != arr.Length - 1)
+                    {
+                        if (arr[i] < arr[i + 1])
+                        {
+                            int valor_actual = arr[i];
+                            arr[i] = arr[i + 1];
+                            arr[i + 1] = valor_actual;
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i]);
+            }
 
 
 
