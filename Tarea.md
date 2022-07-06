@@ -1,4 +1,4 @@
-1- Debera crear una matriz 2x2 como se hizo en clase y realizar el factorial de cada una de las filas de la matriz
+1- Debera crear una matriz 2x2 como se hizo en clase y realizar la multiplicacion de cada una de las filas de la matriz
 
 
 2- Debera crear una matriz de 2x4 llenarla de datos por el usuario y luego calcular la suma de cada una de sus columnas 
