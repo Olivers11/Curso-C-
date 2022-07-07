@@ -4,88 +4,100 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PrimeraAplicacion
+namespace CursoBasico
 {
-    class Program
+    internal class Program
     {
-    
         static void Main(string[] args)
         {
-            
-            int[] arr = { 4, 2, 19, 12, 5, 15 };
+            //Ejercicio 1
+            int[,] matriz = new int[2, 2];
 
-            for(int i = 0; i < arr.Length; i++)
+            for(int i = 0; i < 2; i++)
             {
-                Console.Write(arr[i] + " ");
+                for(int j = 0; j < 2; j++)
+                {
+                    Console.Write("numero: ");
+                    matriz[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
             }
 
-            Console.WriteLine();
-
-            for(int j = 0; j < arr.Length; j++)
+            for (int i = 0; i < 2; i++)
             {
-                for (int i = 0; i < arr.Length; i++)
+                int mult = 1;
+                for (int j = 0; j < 2; j++)
                 {
-                    if (i != arr.Length - 1)
-                    {
-                        if (arr[i] > arr[i + 1])
-                        {
-                            int valor_actual = arr[i];
-                            arr[i] = arr[i + 1];
-                            arr[i + 1] = valor_actual;
-                        }
-                    }
+                    mult *= matriz[i, j];
+
+                }
+                Console.WriteLine("#" + i + " -- " + mult);
+            }
+            
+            //Ejercicio 2
+            for(int i = 0; i < 2; i++)
+            {
+                for(int j = 0; j < 2; j++)
+                {
+                    Console.Write("numero: ");
+                    matriz[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                int suma = 0;
+                for (int j = 0; j < 2; j++)
+                {
+                    suma = suma +  matriz[j, i];
+
+                }
+                Console.WriteLine("#" + i + " -- " + suma);
+            }
+
+            //Ejercicio 3
+            int[,] matriz = new int[3, 3];
+
+            for(int i = 0; i < 3; i++)
+            {
+                for(int j = 0; j < 3; j++)
+                {
+                    Console.Write("numero: ");
+                    matriz[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
             }
 
 
-
-
-
-            for (int i = 0; i < arr.Length; i++)
+            Console.WriteLine("Filas");
+            for (int i = 0; i < 3; i++)
             {
-                Console.Write(arr[i] + " ");
-            }
-            Console.ReadKey();
-
-
-
-
-            // Ejercicio #2
-            int[] arr = new int[5];
-
-            for(int i = 0; i < arr.Length; i++)
-            {
-                Console.Write("Ingrese un numero: ");
-                int n = Convert.ToInt32(Console.ReadLine());
-                arr[i] = n;
-            }
-
-
-            
-            for(int i = 0; i < arr.Length; i++)
-            {
-                for(int k = 0; k < arr.Length; k++)
+                int suma = 0;
+                for (int j = 0; j < 3; j++)
                 {
-                    if (i != arr.Length - 1)
-                    {
-                        if (arr[i] < arr[i + 1])
-                        {
-                            int valor_actual = arr[i];
-                            arr[i] = arr[i + 1];
-                            arr[i + 1] = valor_actual;
-                        }
-                    }
+                    suma = suma + matriz[i, j];
+
                 }
+                Console.WriteLine("#" + i + " -- " + suma);
             }
 
-            for (int i = 0; i < arr.Length; i++)
+
+            Console.WriteLine("Columnas");
+            for (int i = 0; i < 3; i++)
             {
-                Console.Write(arr[i]);
+                int suma = 0;
+                for (int j = 0; j < 3; j++)
+                {
+                    suma = suma +  matriz[j, i];
+
+                }
+                Console.WriteLine("#" + i + " -- " + suma);
             }
 
-
-
-
+            int sum = 0;
+            for(int i = 0; i < 3; i++)
+            {
+                sum = sum + matriz[i, i];
+            }
+            Console.WriteLine("Cruzada: " + sum);
 
 
             Console.ReadKey();
