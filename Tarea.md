@@ -1,8 +1,11 @@
-1- Debera crear una matriz 2x2 como se hizo en clase y realizar la multiplicacion de cada una de las filas de la matriz
+1- Crear una funcion que calcule el factorial de un numero(recibido como parametro) y devuelva el resultado
 
+2- Realizar una funcion booleana, que retorne verdadero si el numero pasado como parametro es un numero primo, de lo contrario retornara falso
 
-2- Debera crear una matriz de 2x4 llenarla de datos por el usuario y luego calcular la suma de cada una de sus columnas 
-
-3- Crear una matriz de 3x3, debera llenarla de datos como se ha realizado anteriormente, luego debera mostrar la suma de filas, columnas y tambien de forma cruzada
+3- Crear un menu, este menu tendra las opciones para multiplicar y dividir 2 numeros por ej:
+       1- Multiplicar
+       2- Dividir
+       3- salir
+   El usuario debera seleccionar su opcion, y realizar el calculo necesario, para ello debe pedir los numeros lol, utilizar funciones para los calculos
    
-4- Investigar sobre funciones en C#
+
